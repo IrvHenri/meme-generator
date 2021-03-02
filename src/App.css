@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #333333, rgba(105, 105, 105, 0.993));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-logo {
+  height: 35px;
+  margin-left: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header > p {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 2em;
+}
+
+.meme-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 75%;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2em auto;
+}
+
+.meme-form input,
+button {
+  padding: 0.4em 1em;
+}
+
+button {
+  color: #fff;
+  background: #333;
+}
+
+.meme {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.meme > img {
+  width: 100%;
+}
+
+.meme > h2 {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 7px 0;
+  padding: 0 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
   color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
 }
 
-.App-link {
-  color: #61dafb;
+.meme > .bottom-text {
+  bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.meme > .top-text {
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .meme-form {
+    flex-direction: row;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .meme > h2 {
+    font-size: 2.4em;
+    margin: 15px 0;
+  }
+
+  .meme-form input,
+  button {
+    padding: 0.7em 1.3em;
   }
 }
