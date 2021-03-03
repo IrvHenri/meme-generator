@@ -11,7 +11,7 @@ https://the-meme-generator.herokuapp.com/
 
 ## Motivation
 
- I wanted to practice creating controlled forms within a react app and updating state within a form.
+ I wanted to practice creating controlled forms within a react app and updating state with class based components.
 
 ## Tech Stack
 
