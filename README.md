@@ -1,5 +1,5 @@
 # Meme Generator React App
- This is a challenge from "Learn React" from Scrimba Frontend Developer course. A class-based component app which fetches a random image and allows user to input the text to create a meme.
+ This is a "React Basics" challenge from a module from Scrimba Frontend Developer course. A class-based component app which fetches a random image and allows the user to input the text to create a meme.
  
  
 ## Demo
